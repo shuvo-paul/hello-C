@@ -1,24 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int t, i, j;
-
-    scanf("%d", &t);
-    int n[t];
-    for(i = 0; i < t; i++) {
-        printf("Enter Case %d: ", i+1);
-        scanf("%d", &n[i]);
-    }
-
-    for(i = 0; i < t; i++) {
-        printf("Case %d: ", i+1);
-
-        for(j=2; j <= n[i]; j++) {
-            if(n[i] % j == 0) {
-                printf("%d ", j);
-            }
+    int n = 1000;
+    int b = 5;
+    while(n > 0) {
+        printf("%d\t", n);
+        b--;
+        if(b == 0) {
+            printf("\n");
+            b = 5;
         }
-        printf("\n");
+
+        n--;
     }
 
     return 0;
