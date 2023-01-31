@@ -3,3 +3,4 @@
 play.c
 *.txt
 *.jpg
+.DS_Store
